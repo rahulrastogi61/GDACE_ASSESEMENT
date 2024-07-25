@@ -1,0 +1,32 @@
+{
+  "name": "gdsace_automation",
+  "version": "1.0.0",
+  "description": "Test Automation for GDSACE ",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env ENV=prod cucumber-js || true && npm run report",
+    "report": "npx ts-node src/helper/report.ts"
+  },
+  "author": "rahul rastogi",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^20.14.12",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "mailosaur": "^8.6.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "playwright": "^1.45.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "faker": "^6.6.6",
+    "mailslurp-client": "^15.18.2",
+    "winston": "^3.13.1"
+  }
+}
